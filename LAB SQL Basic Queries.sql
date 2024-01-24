@@ -37,10 +37,10 @@
     
     #5.3 Determine how many films are available for rent and how many have been rented.
     
-    SELECT film_id as available FROM inventory group by film_id;
-    SELECT count(available) FROM inventory WHERE staff_id;
+    SELECT COUNT(DISTINCT film_id) FROM inventory;
     
-    
+    SELECT COUNT(DISTINCT inventory_id) FROM rental;
+
     #5.4 Determine the number of distinct last names of the actors in the database.
     
     SELECT DISTINCT last_name FROM actor;
