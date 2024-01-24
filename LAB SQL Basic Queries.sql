@@ -43,7 +43,7 @@
 
     #5.4 Determine the number of distinct last names of the actors in the database.
     
-    SELECT DISTINCT last_name FROM actor;
+    SELECT COUNT(DISTINCT last_name ) FROM actor;
     
     
 # 6. Retrieve the 10 longest films.
